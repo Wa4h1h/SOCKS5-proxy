@@ -16,6 +16,7 @@ func main() {
 	creds.Seed(map[string]string{
 		"test": "test",
 	})
+
 	s := proxy.NewServer(proxy.WithCredentials(creds))
 
 	go func() {
