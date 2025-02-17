@@ -25,7 +25,7 @@ func (a *Auth) Authenticate() error {
 
 	if err := a.Conn.SetDeadline(time.Now().
 		Add(time.Duration(utils.Timeout) * time.Second)); err != nil {
-		return fmt.Errorf("set read deadline: %w", err)
+		return fmt.Errorf("set conn deadline: %w", err)
 	}
 
 	n, err := a.Conn.Read(b)

@@ -105,7 +105,7 @@ func (s *Server) Close() error {
 func (s *Server) handleConn(conn net.Conn) {
 	defer conn.Close()
 
-	a := auth.NewAuth(conn, s.Config.AuthSource)
+	a := auth.NewAuth(conn, s.Config.Credentials)
 
 	if err := a.Authenticate(); err != nil {
 		log.Println(err)
