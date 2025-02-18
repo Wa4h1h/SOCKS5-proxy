@@ -5,6 +5,6 @@ build: test
 	go build -o socks5 *.go
 
 test:
-	go test -v .
+	go test -v ./...
 
-.PHONY: run
+.PHONY: run test

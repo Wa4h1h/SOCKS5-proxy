@@ -12,7 +12,6 @@ import (
 	"time"
 
 	"github.com/Wa4h1h/SOCKS5-proxy/credentials"
-
 	"github.com/Wa4h1h/SOCKS5-proxy/utils"
 )
 
@@ -39,7 +38,7 @@ func (a *Auth) Authenticate() error {
 
 	authRequest := new(Request)
 
-	if err := authRequest.parse(b); err != nil {
+	if err := authRequest.parse(b[:n]); err != nil {
 		return err
 	}
 

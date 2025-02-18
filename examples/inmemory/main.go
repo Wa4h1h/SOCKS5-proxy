@@ -7,7 +7,6 @@ import (
 	"syscall"
 
 	"github.com/Wa4h1h/SOCKS5-proxy/credentials"
-
 	"github.com/Wa4h1h/SOCKS5-proxy/proxy"
 )
 

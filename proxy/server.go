@@ -7,9 +7,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/Wa4h1h/SOCKS5-proxy/credentials"
-
 	"github.com/Wa4h1h/SOCKS5-proxy/auth"
+	"github.com/Wa4h1h/SOCKS5-proxy/credentials"
 	"github.com/Wa4h1h/SOCKS5-proxy/utils"
 )
 
