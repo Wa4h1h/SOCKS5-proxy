@@ -141,7 +141,7 @@ func TestAuth_Authenticate(t *testing.T) {
 
 				go func() {
 					/*
-						|ver=0x05|status=0x00|
+						|ver=0x05|status=0x01|
 					*/
 					b = make([]byte, 2)
 
