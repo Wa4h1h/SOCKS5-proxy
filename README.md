@@ -8,7 +8,7 @@ The package implement the revision 5 specification:
 - [ ] Support UDP
 - [ ] TLS encryption
 - [ ] Request Multiplexing
-  - [ ] Connection resistible: connection 1:1 queue with n clients
+  - [ ] Connection reusability: connection 1:1 queue with n clients
 
 #### Examples:
 ```go
