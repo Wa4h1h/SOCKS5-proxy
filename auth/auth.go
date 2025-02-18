@@ -15,7 +15,7 @@ import (
 	"github.com/Wa4h1h/SOCKS5-proxy/utils"
 )
 
-func NewAuth(conn net.Conn, creds credentials.CredentialsVerifier) *Auth {
+func NewAuth(conn net.Conn, creds credentials.Credentials) *Auth {
 	return &Auth{conn, creds}
 }
 

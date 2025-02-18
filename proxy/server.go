@@ -42,7 +42,7 @@ func WithBackoffLimit(backoffLimit int) ServerConfigOpt {
 	}
 }
 
-func WithCredentials(creds credentials.CredentialsVerifier) ServerConfigOpt {
+func WithCredentials(creds credentials.Credentials) ServerConfigOpt {
 	return func(config *ServerConfig) {
 		config.Credentials = creds
 	}

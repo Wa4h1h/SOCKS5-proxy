@@ -12,7 +12,7 @@ import (
 
 type Auth struct {
 	Conn          net.Conn
-	CredsVerifier credentials.CredentialsVerifier
+	CredsVerifier credentials.Credentials
 }
 
 type Request struct {

@@ -19,7 +19,7 @@ type ServerConfig struct {
 	Delay        int
 	DelayInc     int
 	BackoffLimit int
-	Credentials  credentials.CredentialsVerifier
+	Credentials  credentials.Credentials
 }
 type Server struct {
 	Config   *ServerConfig
